@@ -1,15 +1,23 @@
 msgid ""
 msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
-"POT-Creation-Date: Thu Oct 06 2022 19:59:49 GMT+0200 (Central European "
+"POT-Creation-Date: Thu Oct 06 2022 22:06:14 GMT+0200 (Central European "
 "Summer Time)\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src\SingleString.js:11
+#: src\SingleString.js:19
 msgid "Errore traduzione"
 msgstr ""
 
-#: src\SingleString.js:12
+#: src\SingleString.js:20
 msgid "Errore package matto"
+msgstr ""
+
+#: src\SingleString.js:22
+msgid "Set Italiano"
+msgstr ""
+
+#: src\SingleString.js:23
+msgid "Set English"
 msgstr ""

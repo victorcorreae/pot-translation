@@ -1,17 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { StyleSheet, Text, Button, View } from 'react-native';
 import GetText from 'node-gettext';
-import { StyleSheet, Text } from 'react-native';
 
 const SimpleString = () => {
 
     const gt = new GetText();
-    gt.locale();
+
+    const [language, setLanguage] = useState();
+
+    const toggleLanguage = (value) => {
+        console.log('Log: ', value);
+        setLanguage(value)
+        gt.locale(value);
+    };
 
     return (
-        <>
+        <View>
             <Text style={styles.text}>{gt.gettext('Errore traduzione')}</Text>
             <Text style={styles.text}>{gt.gettext('Errore package matto')}</Text>
-        </>
+
+            <Button title={gt.gettext('Set Italiano')} onPress={() => toggleLanguage('it-It')} />
+            <Button title={gt.gettext('Set English')} onPress={() => toggleLanguage('en-US')} />
+        </View>
     );
 };
 
