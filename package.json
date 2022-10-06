@@ -1,0 +1,29 @@
+{
+  "name": "translation",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build:pot": "react-gettext-parser --output messages.pot src/**/*.js*"
+  },
+  "splash": {
+    "backgroundColor": "#152238"
+  },
+  "dependencies": {
+    "expo": "~46.0.13",
+    "expo-status-bar": "~1.4.0",
+    "node-gettext": "^3.0.0",
+    "react": "18.0.0",
+    "react-gettext-parser": "^1.16.0",
+    "react-intl": "^6.1.2",
+    "react-intl-po": "^2.2.2",
+    "react-native": "0.69.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9"
+  },
+  "private": true
+}
